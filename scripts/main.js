@@ -46,7 +46,7 @@ function deleteTask(id) {
 function markDone(id){
   for (i=0; i<todo.length; i++){
     if (id==todo[i].id){
-      todo.completion[i]="Complete";
+      todo[i].completion="Complete";
       
       renderTasks();
     }
