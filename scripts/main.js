@@ -10,6 +10,7 @@ submit.addEventListener("click", function () {
       id: i,
       name: "task",
       description: inputTask.value,
+      completion: "Not complete"
     };
     i++;
     todo.push(tasks);
@@ -22,8 +23,8 @@ submit.addEventListener("click", function () {
 
 function newTaskGenerator(todoitem) {
   return `<input type="checkbox" id="${todoitem.id}" /><label>${todoitem.description}</label>
-  <button class="border btn1" type="button" onclick="">Done</button>
-  <button class="border btn2" type="button" onclick="deleteTask(${todoitem.id})">Delete</button><br />`;
+  <button class="border " type="button" onclick=markDone(${todoitem.id})>${todoitem.completion}</button>
+  <button class="border btn2" type="button" onclick=deleteTask(${todoitem.id})>Delete</button><br />`;
 }
 function renderTasks() {
   taskList.innerHTML = "";
@@ -42,3 +43,12 @@ function deleteTask(id) {
     };
   };
 };
+function markDone(id){
+  for (i=0; i<todo.length; i++){
+    if (id==todo[i].id){
+      todo.completion[i]="Complete";
+      
+      renderTasks();
+    }
+  }
+}
