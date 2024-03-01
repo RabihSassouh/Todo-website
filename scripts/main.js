@@ -20,16 +20,25 @@ submit.addEventListener("click", function () {
   }
 });
 
+function newTaskGenerator(todoitem) {
+  return `<input type="checkbox" id="${todoitem.id}" /><label>${todoitem.description}</label>
+  <button class="border btn1" type="button" onclick="">Done</button>
+  <button class="border btn2" type="button" onclick="deleteTask(${todoitem.id})">Delete</button><br />`;
+}
 function renderTasks() {
   taskList.innerHTML = "";
-  for (i = 0; i < length.todo; i++) {
+  for (i = 0; i < todo.length; i++) {
     const item = todo[i];
     const newTask = newTaskGenerator(item);
     taskList.innerHTML += newTask;
+  }
+}
+
+function deleteTask(id) {
+  for (i = 0; i < todo.length; i++) {
+    if (id == todo[i].id) {
+      todo.splice(i, 1);
+      renderTasks();
+    };
   };
-}
-
-function newTaskGenerator(todoitem) {
-  return `<div><input type="checkbox" id=${todoitem.id} name=${todoitem.name}/><label></label><br /></div>`;
-}
-
+};
