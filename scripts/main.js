@@ -10,7 +10,7 @@ submit.addEventListener("click", function () {
       id: i,
       name: "task",
       description: inputTask.value,
-      completion: "Not complete"
+      completion: "Not complete",
     };
     i++;
     todo.push(tasks);
@@ -40,14 +40,13 @@ function deleteTask(id) {
     if (id == todo[i].id) {
       todo.splice(i, 1);
       renderTasks();
-    };
-  };
-};
-function markDone(id){
-  for (i=0; i<todo.length; i++){
-    if (id==todo[i].id){
-      todo[i].completion="Complete";
-      
+    }
+  }
+}
+function markDone(id) {
+  for (i = 0; i < todo.length; i++) {
+    if (id == todo[i].id) {
+      todo[i].completion = "Complete";
       renderTasks();
     }
   }

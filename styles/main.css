@@ -27,14 +27,14 @@
   height: 300px;
   border: solid;
 }
-.strikethrough{
-    text-decoration: line-through;
+.strikethrough {
+  text-decoration: line-through;
 }
 @media screen and (max-width: 768px) {
-    .parent {
-        width: 80%;
-    }
-    .child4 {
-        width: 100%;
-    }
+  .parent {
+    width: 80%;
+  }
+  .child4 {
+    width: 100%;
+  }
 }

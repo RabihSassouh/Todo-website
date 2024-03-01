@@ -1,12 +1,12 @@
-.primarybackground{
-    background-color: rgb(67, 117, 182);
+.primarybackground {
+  background-color: rgb(67, 117, 182);
 }
-.secondarybackground{
-    background-color: orange;
+.secondarybackground {
+  background-color: orange;
 }
-.primarycolor{
-    color: orange;
+.primarycolor {
+  color: orange;
 }
-.secondarycolor{
-    color: rgb(67, 117, 182);
+.secondarycolor {
+  color: rgb(67, 117, 182);
 }
