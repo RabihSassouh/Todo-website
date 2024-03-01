@@ -18,3 +18,18 @@
     align-items: start;
     justify-content: start;
 }  
+.starttop{
+  justify-content: start;
+  padding-top: 20px;
+}
+.border{
+  border: solid;
+  border-radius: 20px;
+}
+.spacearoundcolumns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}

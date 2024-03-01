@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common/colors.css" />
+    <link rel="stylesheet" href="../styles/common/utilities.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="primarybackground fullbackground flex center">
+      <div class="flex column center starttop parent">
+        <div class="primarycolor flex center child1">To do list</div>
+        <div class="child2">
+          <div class="Add-to-do">Add a to do:</div>
+        </div>
+        <div class="child3">
+          <input
+            type="text"
+            placeholder="Your next to do"
+            class="input-box"
+            id="inputTask"
+          />
+          <button class="border" id="submit">Submit</button>
+        </div>
+        <div class="child4" id="taskList">
+        
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
