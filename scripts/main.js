@@ -51,3 +51,6 @@ function markDone(id) {
     }
   }
 }
+
+const storedUserList=localStorage.getItem("./save.json")
+const UserList=JSON.parse(storedUserList)

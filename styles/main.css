@@ -27,9 +27,11 @@
   height: 300px;
   border: solid;
 }
-.strikethrough {
-  text-decoration: line-through;
+.child5{
+  justify-content: space-between;
+  width: 280px;
 }
+
 @media screen and (max-width: 768px) {
   .parent {
     width: 80%;
